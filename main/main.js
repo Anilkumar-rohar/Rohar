@@ -192,7 +192,8 @@ defilee.init();
 /* animation js */
 
 
-/* image slider and videos */
+/* image slider */
+
 
  
    
