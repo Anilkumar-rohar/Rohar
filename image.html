@@ -1,0 +1,55 @@
+
+
+<head>
+    <title>Rohar Technologies</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="image.css">
+    <link rel="stylesheet" type="text/css" href="home/css/fontawesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script src="home/js/fontawesome.min.js"></script>
+       <script src="image.js"></script>
+  
+  
+  </head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <transition name="slide">
+                <div v-if="show" class="card-container">
+                    <div class="image-container img-one">
+
+                    </div>
+                    <div class="testimonial">
+                        <h1>Jane Watson</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam reiciendis nesciunt
+                            consequuntur, alias libero nihil aliquid magnam vero dolor quidem commodi saepe eligendi
+                            enim debitis facere quaerat omnis asperiores!</p>
+                    </div>
+                </div>
+            </transition>
+            <transition name="slide">
+                <div v-if="!show" class="card-container">
+                    <div class="image-container img-two">
+
+                    </div>
+                    <div class="testimonial">
+                        <h1>Casey Storm</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae non facere similique
+                            illum veniam illo, ullam tempora aut sint, reprehenderit nemo hic commodi. Sed, eos
+                            perspiciatis dolore pariatur minus id?</p>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

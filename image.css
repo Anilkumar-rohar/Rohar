@@ -1,0 +1,49 @@
+.testmonial {
+
+  background-color: #1078b0;
+}
+.testmonial .card-inner {
+  background:#121e27;
+  border-radius:15px;
+  border:3px dashed #fd0568;
+}
+.testmonial .card-inner .card-thumbnail {
+  position:relative;
+    display:block;  
+}
+.testmonial .card-inner .card-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.testmonial .card-inner .card-thumbnail .image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center right;
+}
+.testmonial .card-inner p {
+  color:#ffffff;
+}
+.testmonial .testionial-name {
+text-transform:uppercase;
+  font-weight:500;
+}
+.card-inner .quote-icon {
+    color:#fd0568;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+    color: #fd0568;
+    opacity: 1;
+    font-size: 16px;
+}
+.slick-dots li.slick-active button {
+    border: 5px solid #1078b0;
+    border-radius: 100%;
+}
+.slick-dots li.slick-active button:before {
+    color: transparent;
+}

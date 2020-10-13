@@ -1,0 +1,331 @@
+  /*start global */
+
+@import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+  
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 15px;
+
+    
+  }
+
+
+
+.codepenBG {
+  height:150px;
+  margin-top:111px;
+  background-image: url('back.jpg')
+  
+}
+
+
+
+.heading h1:after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: #BABABA;
+    margin-top: px;
+    
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
+
+/* end global */
+
+/* start of our services section */
+
+#our-services {
+    background:grey;
+    min-height: 530px;
+    padding-top: 10px;
+    padding-bottom: 15PX;
+      /*background-image: url('back.jpg');*/
+  
+
+
+}
+
+/* OUR SEERVICES LEFT SIDE */
+
+#our-services .desc {
+    width: 33%;
+    float: left;
+}
+
+#our-services .desc .heading h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    margin-bottom: 30px;
+    color: wheat;
+}
+
+#our-services .desc .text {
+    color: wheat;
+      
+  
+}
+
+#our-services .desc .text p {
+      margin-bottom: 20px;
+    font-size: 20;
+    line-height: 1.5;
+    color: wheat;
+  }
+  
+/* OUR SERVICES RIGHT SIDE */
+
+#our-services .services {
+    width: 67%;
+    float: left;
+      top: 7px;
+    position: relative;
+        padding-bottom: 50;
+
+}
+  
+#our-services .services .serviceinfo {
+  height:200px;
+
+  
+}
+
+  
+  #our-services .services .row {
+float: left;
+    transition: transform 0.3s 0.3s ease, top 0.4s ease;
+
+}
+
+    #our-services .services .row1 {
+      position: relative;
+      top:10px;
+    transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+      left: 10px;
+}
+  
+    #our-services .services .row2 {
+      position: relative;
+      top:10px;
+    transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+      margin-left: 105px;
+         left: 10px;
+}
+  
+#column-1 {
+    position: relative;
+    top: 15px;
+    left: 0px;
+
+  }
+  
+#column-2 {
+    position: relative;
+    top: 10px;
+    left: -5px;
+  }
+
+  #our-services .services .row1expand {
+    margin-right: 0px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -93px;
+    transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+    left: 300px;
+    z-index:2;
+}
+  
+    #our-services .services .row2expand {
+    float: left;
+    margin-right: 0px;
+    transform: rotate(0deg);
+    position: relative;
+    top: 110px;
+    transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
+          left: 195px;
+          z-index:2;
+}
+  
+  
+#our-services .services .row .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: maroon;
+    transition: all 0.3s ease;
+    margin-bottom: 7px;
+      margin-left: 85px;
+  transform: rotate(45deg); */
+  transition: margin-left 0.3s 0.4s;
+}
+  
+#our-services .services .row .serviceexpand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius:10px;
+    background: yellow;
+    transition: all 0.3s ease;
+    margin-bottom: 7px;
+      margin-left: 0px;
+  transform: rotate(0deg); */
+  transition: margin-left 0.3s 0.4s;
+  padding-right:-20px;
+    border: 1px solid black;
+}
+  
+
+#our-services .services .row .selectedservice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: blue;
+    transition: all 0.3s ease;
+    margin-bottom: 7px;
+  position:relative;
+}
+  
+
+#our-services .services .row .service:hover {
+    background: transparent;
+    color: #fff;
+}
+
+#our-services .services .row .service:hover .service-icon {
+    color: #fff;
+}
+
+#servicechoicetext {
+  position:relative;
+  width: 200px;
+  height: 30px;
+  left: 390px;
+  opacity: .4;
+  color: white;
+    font-size: 20px;
+}
+
+
+#our-services .services .row .service .service-desc {
+    transform: rotate(-45deg);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+  
+#our-services .services .row .service .service-desc p {  
+      font-size: 11px;
+  }
+  
+#our-services .services .row .service .service-desc .service-icon  {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f57469;
+}
+
+/* end of our services section */
+
+/* media query */
+
+@media all and (max-width: 600px) {
+    #our-services {
+        padding-top: 60px;
+    }
+    
+    #our-services .desc {
+        width: 100%;
+        float: none;
+        margin-bottom: 300px;
+    }
+    
+    #our-services .services {
+        width: 100%;
+    }
+    
+    #our-services .services .row {
+        transform: rotate(0deg);
+        margin-right: 10px;
+    }
+    
+    #our-services .services .row .service .service-desc {
+        transform: rotate(0deg);
+    }
+}
+
+#servicesdetails {
+      position: relative;
+      font-size: 14px;
+    line-height: 1.5;
+    font-family:'Roboto', sans-serif;
+  width: 600px;
+}
+
+#servicesdetails .invisible {
+  position:relative;
+    top: 60px;
+    left: 70px;
+  opacity:.0;
+    transition: all 0.5s ease;
+}
+
+#servicesdetails .visible {
+  opacity:.9;
+  position:relative;
+  top: 85px;
+  transition: all 0.5s ease;
+}
+
+#microassessment {
+  display: none;
+  height:0px; 
+  overflow:visible;
+}
+#documentreview {
+  display: none;
+    height:0px; 
+  overflow:visible;
+}
+#macroassessment {
+  display: none;
+    height:0px; 
+  overflow:visible;
+}
+#deliverableservices {
+  display: none;
+    height:0px; 
+  overflow:visible;
+}
+#projectexecution {
+  display: none;
+    height:0px; 
+  overflow:visible;
+}
+#dpooutsourcing {
+  display: none;
+    height:0px; 
+  overflow:visible;
+}
